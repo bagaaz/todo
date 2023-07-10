@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+    --black: #26292B;
+    --white: #F5F5F5;
+    --white-hover: #E8E8E8;
+    --grey: #2E3239;
+    --blue: #5F7ADB;
+    --blue-hover: #4F6CC1;
+    --light-blue: #A2B2EE;
+
+    --green: #33CC33;
+    --green-hover: #29A329;
+    --red: #CC3333;
+    --red-hover: #A32929;
+
+    background: var(--black);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}

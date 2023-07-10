@@ -1,0 +1,217 @@
+main {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.app {
+    background-color: var(--grey);
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.app_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.app_header__title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.app_header__form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+.app_header__input-task {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--white);
+    margin: 0 10px 0 20px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.app_header__input-task:focus {
+    outline: 2px solid var(--blue);
+}
+
+.app_header__input-task::placeholder {
+    color: var(--grey);
+}
+
+.app_header__submit-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin: 0 20px 0 10px;
+    border: none;
+    background-color: var(--blue);
+}
+
+.app_header__submit-button:hover {
+    background-color: var(--light-blue);
+}
+
+.app_header__submit-button > i {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* Listagem */
+
+.app_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 10px 30px;
+}
+
+.app_body__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+}
+
+.app_body__list {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+.app_body__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    min-height: 50px;
+    border-radius: 5px;
+    background-color: var(--white);
+    margin: 10px 0;
+    padding: 0 0 0 10px;
+}
+
+.app_body__list-item:hover {
+    background-color: var(--white-hover);
+}
+
+.app_body__list-item__task {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.checked {
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.app_body__list-item__task-input {
+    background-color: var(--white);
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.app_body__list-item__task-input:focus {
+    outline: 2px solid var(--blue);
+}
+
+.app_body__list-item__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.app_body__list-item__actions__check-button {
+    font-size: 1.5rem;
+    width: 50px;
+    border: none;
+    background-color: var(--green);
+    color: var(--white-hover);
+}
+
+.app_body__list-item__actions__check-button:hover {
+    background-color: var(--green-hover);
+}
+
+.app_body__list-item__actions__edit-button {
+    font-size: 1.2rem;
+    width: 50px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white-hover);
+}
+
+.app_body__list-item__actions__edit-button:hover {
+    background-color: var(--blue-hover);
+}
+
+.app_body__list-item__actions__delete-button {
+    font-size: 1.5rem;
+    width: 50px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: var(--red);
+    color: var(--white-hover);
+}
+
+.app_body__list-item__actions__delete-button:hover {
+    background-color: var(--red-hover);
+}
+
+.app_body__list-item__actions__save-button {
+    font-size: 1.5rem;
+    width: 50px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white-hover);
+}
+
+.app_body__list-item__actions__save-button:hover {
+    background-color: var(--blue-hover);
+}
+
+/* Drag and drop - Future implementation */ 
+
+/*
+.drag-handle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20px;
+}
+.drag-handle div {
+    height: 3px;
+    width: 3px;
+    margin: 1px;
+    background-color: #000;
+}
+*/
